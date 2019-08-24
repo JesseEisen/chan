@@ -104,6 +104,30 @@ body {
     max-width: 40rem;
 }
 
+.about {
+    margin: auto;
+    /* padding: 4rem 1rem 0; */
+    max-width: 40rem;
+}
+
+.about>hr {
+    border: 0px;
+    height: 1px;
+    background: black;
+    opacity: 0.05;
+    margin: 4rem 0px;
+}
+
+.about>blockquote {
+    font-style: italic;
+    margin: 1.5rem;
+}
+
+.about>blockquote,
+.about>blockquote p {
+    line-height: 1.6;
+}
+
 .pnav {
     display: flex;
     -webkit-box-pack: justify;
