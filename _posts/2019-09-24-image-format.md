@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "两种图片格式的转换"
+title: "YUV 图片格式介绍"
 author: "Chan"
 date: "2019-09-24"
 category: "tech"
@@ -36,6 +36,8 @@ YUV 通常我们需要拆开看，其中：
 
 其中黑色的点表示的是 Y 分量，空心点表示的 UV 分量组。 
 
+---
+
 ### 存储
 
 说完了格式，我们需要了解在实际使用过程中，YUV 格式的文件是如何存储的。在最开始我们提到了 Packed 和 Planar 这两种格式，下面分别说一下如何这两种格式是如何存储的。
@@ -70,7 +72,7 @@ YYYYYYYY UVUV   NV12
 
 YYYYYYYY VUVU  NV21
 
-
+---
 
 ### 转换
 
