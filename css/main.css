@@ -232,3 +232,11 @@ pre {
     font-size: .8rem;
     color: #aaa;
 }
+
+img {
+    width: auto;
+    height: auto;
+    margin-left: -15px;
+    max-width: 100%;
+    max-height: 100%;
+}
