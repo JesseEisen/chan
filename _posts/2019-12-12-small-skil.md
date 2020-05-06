@@ -57,3 +57,9 @@ curl --request DELETE --header "PRIVATE-TOKEN: :token" "https://gitlab.deepglint
 
 + [上传文件](https://docs.gitlab.com/ee/api/projects.html#upload-a-file)
 + [Release API 详情](https://docs.gitlab.com/ee/api/releases/index.html)
+
+---
+
+### 长截图
+
+在 chrome 中可以通过一个快捷的方式来截取整个页面。打开「开发者模式」- 	`shift+command+p`  -  输入 「screen」搜索到 capture full size screen 就可以将整个页面截取下来。 
