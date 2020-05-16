@@ -223,11 +223,10 @@ pre {
 }
 
 .pcontents>a {
-    text-decoration: none;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, rgba(49,184,204,0.5)));
-    background: -o-linear-gradient(top, transparent 70%, rgba(49,184,204,0.5) 70%);
     background: linear-gradient(to bottom, transparent 70%, rgba(49,184,204,0.5) 70%);
 }
+
 .pcontents>blockquote,
 .pcontents>blockquote p {
     line-height: 1.6;
