@@ -39,6 +39,11 @@ body {
     font: 13px Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
         Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
+ 
+
+::-webkit-scrollbar {
+    display:none
+}
 
 .main>h1 {
     font-size: 14px;
@@ -147,7 +152,10 @@ body {
     word-break: break-word;
     word-wrap: break-word;
     hyphens: auto;
-    font-family: Optima-Regular, PingFangTC-light, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, Helvetica, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Microsoft Yahei', sans-serif;
+    /*font-family: Optima-Regular, PingFangTC-light, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, Helvetica, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Microsoft Yahei', sans-serif;*/
+    /*font-family: Roboto,Helvetica,Tahoma,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK","WenQuanYi Micro Hei",sans-serif;*/
+    font: 400 18px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    color: #444443;
     font-feature-settings: 'liga'1, 'dlig'1, 'lnum'1, 'ordn'1, 'halt'1, 'kern'1, 'kern', 'mgrk';
     font-kerning: auto;
     font-variant: normal;
@@ -163,7 +171,7 @@ body {
     font-weight: 600;
 }
 
-.pcontents>h2 {
+/*.pcontents>h2 {
     margin-top: 2.5rem;
     font-size: 1.3em;
     font-weight: 600;
@@ -173,6 +181,14 @@ body {
     font-size: 1.12em;
     margin-top: 2.5rem;
     font-weight: 600;
+}*/
+.pcontents h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+.pcontents h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
 }
 
 .back>a {
@@ -189,8 +205,9 @@ a {
 
 pre,
 code {
-    font-family: 'Inconsolata', monospace;
-    font-size: 100%;
+    font-family: 'Roboto Mono', 'Inconsolata', monospace;
+    font-size: 13px;
+    overflow-x: scroll;
 }
 
 pre {
@@ -239,4 +256,9 @@ img {
     margin-left: -15px;
     max-width: 100%;
     max-height: 100%;
+}
+
+.pcontents h1, .pcontents h2, .pcontents h3, .pcontents h4, .pcontents h5, .pcontents h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    color: #222223;
 }
