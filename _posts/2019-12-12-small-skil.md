@@ -1,6 +1,6 @@
 ---
 gitlayout: post
-title: "工具操作小记"
+title: "GitLab 发版操作"
 author: "Chan"
 date: "2019-12-12"
 category: "note"
