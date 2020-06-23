@@ -34,6 +34,8 @@ $ psql -h hosturl -U username -d databasename -p port
 
 ---
 
+### 数据库导入导出
+
 postgresql 支持将指定的数据库导出到一个 sql 文件中，同时在另外的数据库中进行导入。操作命令如下：
 
 ```bash
