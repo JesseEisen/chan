@@ -14,3 +14,22 @@ category: "note"
 
 ---
 
+### 通过 button 下载文件
+
+**问题**：点击按钮之后，后台返回文件的 url，需要能够自动触发下载操作
+
+**解决方案**：简单的做法如下：
+
+```js
+let a = document.createElement("a");
+a.download = fileName;
+a.style.display = "none";
+a.href = fullurl;    
+document.body.appendChild(a);
+a.click();
+URL.revokeObjectURL(a.href);    
+document.body.removeChild(a);   
+
+
+```
+

@@ -1,6 +1,6 @@
 ---
 gitlayout: post
-title: "Git 速查"
+title: "Git cheatsheet"
 author: "Chan"
 date: "2019-08-30"
 category: "note"
