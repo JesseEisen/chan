@@ -210,6 +210,11 @@ pre {
     font-size: 100%;
 }
 
+mark {
+    background: #FF0080;
+    color: #FAFAFA;
+}
+
 .pcontents>hr {
     border: 0px;
     height: 1px;
