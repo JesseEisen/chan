@@ -58,3 +58,19 @@ hello world!
 
 可以看到，使用了 command 之后会跳过 .bashrc 中的函数，直接执行命令。 使用 `help command`  可以查看手册。更多讨论参看：[command](https://askubuntu.com/questions/512770/what-is-use-of-command-command) 。
 
+---
+
+### 处理 Pipe 的输入
+
+当需要我们所编写的脚本可以接收 pipe 的输入时。可以使用如下的技巧：
+
+```shell
+#!/bin/bash
+[ $# -ge 1 -a -f "$1" ] && input="$1" || input="-"
+cat $input
+```
+
+注意，cat 可以接收 `-`  作为 stdin 的。如果有其他的命令也可以处理 `-` 。则也可以处理上述命令中的 `$input`。 简单解释一下：
+
+`[ $# -ge 1 -a -f "$1"]`  这个是用来判断脚本的参数是不是只有一个且参数是一个文件， 如果是，则把 "$1" 赋值给 input。 再根据短路判断规则，如果 `||` 前面的判断成功的话就直接结束。如果失败的话，则把 `-` 赋值给 input。<mark> `-` 一般表示的是标准输入。</mark>
+
