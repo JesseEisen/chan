@@ -24,11 +24,12 @@ category: "note"
 let a = document.createElement("a");
 a.download = fileName;
 a.style.display = "none";
+a.target="_blank";   // open in new tag page
 a.href = fullurl;    
 document.body.appendChild(a);
 a.click();
 URL.revokeObjectURL(a.href);    
-document.body.removeChild(a);   
+document.body.removeChild(a); 
 
 
 ```

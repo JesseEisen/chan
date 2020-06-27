@@ -74,3 +74,28 @@ cat $input
 
 `[ $# -ge 1 -a -f "\$1"]`  这个是用来判断脚本的参数是不是只有一个且参数是一个文件， 如果是，则把 "$1" 赋值给 input。 再根据短路判断规则，如果 `||` 前面的判断成功的话就直接结束。如果失败的话，则把 `-` 赋值给 input。<mark> `-` 一般表示的是标准输入。</mark>
 
+---
+
+### Sed 和 Awk 使用 shell 变量
+
+日常脚本编写中我们常会在 sed 或者 awk 中使用 shell 的变量。我们需要做如下的处理：
+
++ sed
+
+将原有的单引号改成双引号即可
+
+```shell
+$ name="stephen"
+$ sed -n "s/$name/curry/g" filename
+```
+
++ awk
+
+使用双引号嵌套单引号的方式，或者使用 `-v` 选项传入
+
+```shell 
+$ name="stephen"
+$ awk 'BEGIN {print("'$name'")}'
+$ awk -v awk_var="$name" 'BEGIN {print awk_var}'
+```
+
