@@ -8,7 +8,7 @@ category: "note"
 
 ### 说明
 
-这篇是我个人在日常使用中的一个 awesome list， 按照不同的语言，不同的场景进行分类。除此之外， Github 上 Star 别人的项目多了，再想去找基本上要废些时间(真希望 Github 能出一个按类归档的 star 功能)，所以还会有一部分 github 上的工具陈列。
+这篇是我个人在日常使用中的一个 awesome list， 按照不同的语言，不同的场景进行分类。除此之外， Github 上 Star 别人的项目多了，再想去找基本上要废些时间(真希望 Github 能出一个按类归档的 star 功能)，所以还会有一部分 Github 上的工具陈列。
 
 
 
@@ -25,6 +25,7 @@ category: "note"
 ### Go
 
 + [GoFrame](https://goframe.org/index) 低调大气的 Web 开发框架，使用起来相当顺手。
++ [Gonum](https://github.com/gonum)  和 numpy 或者 scipy 类似的科学计算包
 
 ---
 
