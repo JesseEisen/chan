@@ -17,3 +17,12 @@ category: "essay"
 不论是改编还是自己创作都会给人以惊喜，旋律和歌曲整体表达上简直是身心的享受。
 
 <iframe src="//player.bilibili.com/player.html?aid=75965449&cid=129946821&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+
+---
+
+###   Music 歌曲
+
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/%E4%B9%B1%E7%82%96/pl.u-EdAVkr4taZRrN57"></iframe>
+
