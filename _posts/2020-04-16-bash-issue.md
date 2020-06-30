@@ -131,28 +131,26 @@ while [ $# -gt 0 ]; do
 上述的程序能够处理： `./myscript -A a  b c d`  这样的命令，其中 aptA 的值是 a。paths 的值是 (b c d)。当我们还想以另外的一种形式进行处理时，可以采取如下方式：
 
 ```shell
-	for i in "$@"
-	do
-	  case $i in
-	  	-e=*|--extension=*)
-	  		extension="${i#*=}"
-	  		shift
-	  		;;
-	  	-s=*|--static=*)
-	  		static="${i#*=}"
-	  		shift
-	  		;;
-	  	--default)
-	  		default=yes
-	  		shift
-	  		;;
-	  	*)
-	  		// do nothing
-	  		;;
-	 esac
-	 done
-	 
-	  		
+for i in "$@"; do
+case $i in
+		-e=*|--extension=*)
+		extension="${i#*=}"
+		shift
+		;;
+-s=*|--static=*)
+		static="${i#*=}"
+		shift
+		;;
+--default)
+		default=yes
+		shift
+		;;
+*)
+		// do nothing
+		;;
+esac
+done
+	   		
 ```
 
 上述程序可以处理这样的形式：`./myscript -e=exe -s=yes --defalut`  。 注意如果需要处理额外的参数，可以在 `*)`  分支上里面处理。
