@@ -1,5 +1,5 @@
 ---
-**gitlayout**: post
+layout: post
 title: "shell 脚本实践"
 author: "Chan"
 date: "2020-04-16"
