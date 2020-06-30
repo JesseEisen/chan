@@ -1,5 +1,5 @@
 ---
-gitlayout: post
+**gitlayout**: post
 title: "shell 脚本实践"
 author: "Chan"
 date: "2020-04-16"
@@ -99,3 +99,64 @@ $ awk 'BEGIN {print("'$name'")}'
 $ awk -v awk_var="$name" 'BEGIN {print awk_var}'
 ```
 
+---
+
+### Bash 命令行参数处理
+
+如果参数比较简单，可以直接使用  `case`  进行。如果稍微复杂一些的，可以使用  `while` 来做。当然还是可以使用 `getopt` 进行。
+
++ while 
+
+```shell
+declare -a paths=()
+while [ $# -gt 0 ]; do 
+   case $1 in
+   	 --A|--longA)
+     	   shift
+   	 		optA="$1"
+   	 		;;
+   	 --*)
+   	    usage
+   	    exit 1
+   	    ;;
+   	  *)
+   	   paths += ( "$1" )
+   	   ;;
+   esac
+   
+   shift
+ done
+```
+
+上述的程序能够处理： `./myscript -A a  b c d`  这样的命令，其中 aptA 的值是 a。paths 的值是 (b c d)。当我们还想以另外的一种形式进行处理时，可以采取如下方式：
+
+```shell
+	for i in "$@"
+	do
+	  case $i in
+	  	-e=*|--extension=*)
+	  		extension="${i#*=}"
+	  		shift
+	  		;;
+	  	-s=*|--static=*)
+	  		static="${i#*=}"
+	  		shift
+	  		;;
+	  	--default)
+	  		default=yes
+	  		shift
+	  		;;
+	  	*)
+	  		// do nothing
+	  		;;
+	 esac
+	 done
+	 
+	  		
+```
+
+上述程序可以处理这样的形式：`./myscript -e=exe -s=yes --defalut`  。 注意如果需要处理额外的参数，可以在 `*)`  分支上里面处理。
+
++ getopt
+
+参考[这篇文章](https://www.aplawrence.com/Unix/getopts.html)
