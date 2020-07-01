@@ -17,12 +17,13 @@ Linux 命令经历了这么些年的迭代，几乎能够满足大部分的场�
 <details>
   <summary>忽略目录前缀</summary>
   问题：当指定了要打包的目录的完整路径时，在打包之后这个路径的目录结构会被保留下来。如果想只保留最后一级目录，可以通过 -C 选项。
-  
-  ```shell
+
+```shell
   $ tar -czf target.tar.gz -C /xxx/xxx target
-  ```
-  
-  `-C` 指定目录前缀
+```
+
+`-C` 指定目录前缀
+
 </details>
 
 
