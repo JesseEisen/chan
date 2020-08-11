@@ -36,7 +36,27 @@ $ jq -r --arg i "$i" '$i' a.json
 2
 ```
 
-如果是直接使用，可以直接通过 $i 进行使用的。
+如果是直接使用，可以直接通过 $i 进行使用的。 下面的例子可以生成一个 JSON 字符串。
+
+```shell
+param1_shell="hhh"
+param2_shell="www"
+param3_shell="bbb"
+
+JSON_STRING=$(jq -n \
+					 --arg param1 "$param1_shell" \
+					 --arg param2 "$param2_shell" \
+					 --arg param3 "$param3_shell" \
+					 '{p1: $param1, p2: $param2, p3: $param3}')
+```
+
+再补充一下，可以使用 `printf` 来完成这样的操作。
+
+```shell
+printf -v json_string '{"p1":"%s","p2":"%s","p3":"%s"}' "$param1_shell" "$param2_shell" "$param3_shell" 
+```
+
+
 
 ---
 
