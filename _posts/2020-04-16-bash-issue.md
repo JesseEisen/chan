@@ -158,3 +158,48 @@ done
 + getopt
 
 参考[这篇文章](https://www.aplawrence.com/Unix/getopts.html)
+
+---
+
+### Bash 读取文件
+
+一行一行的读取文件：
+
+```bash
+while IFS= read -r line; do
+    echo "read $line"
+done < filename.txt
+```
+
++ `IFS=` 表示防止 leading/trailing 空白字符被截断
++ `-r` 表示防止转移字符被解析
+
+**如果一个文件不是一个标准的 POSIX文本文件(没有使用newline 作为换行)，则需要使用下面的方式来读取**
+
+```bash
+while IFS= read -r line || [[ -n "$line" ]];do
+   echo "read $line"
+done < filename.txt
+```
+
++ `|| [[ -n "$line" ]]`  防止最后一个行因为没有 `\n` 而被忽略。 因为 `read ` 当遇到 EOF 时会返回一个非 0 的退出码。
+
+**引用 POSXI 标准定义的 line**
+```shell
+3.206 Line   
+A sequence of zero or more non- <newline> characters plus a terminating <newline> character.
+```
+
+除此之外还可以指定描述符：
+
+```bash
+while IFS= read -r <&3 line; do
+	echo "read $line"
+done 3< filename.txt
+```
+
+参考链接
+
++ [bash FAQ](http://mywiki.wooledge.org/BashFAQ/001)
++ [POSIX Text File](https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline/729795#729795)
+
