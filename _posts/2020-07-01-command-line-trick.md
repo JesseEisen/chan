@@ -22,7 +22,22 @@ Linux 命令经历了这么些年的迭代，几乎能够满足大部分的场�
   $ tar -czf target.tar.gz -C /xxx/xxx target
 ```
 
+另外一个方式是：`strip-components`
 
+```bash
+$ tree a
+a
+└── b
+    └── c
+        └── files
+$ tar czf a.tar.gz a
+$ tar tvf a.tar.gz 
+drwxr-xr-x  0 jesse  staff       0 11  1 18:04 a/b/c/files/
+$ tar xzf a.tar.gz --strip-components=1; ls 
+b
+```
+
+通过指定 `strip-components=number` 来消除目录前缀， `number` 表示省略几个目录
 
 
 
