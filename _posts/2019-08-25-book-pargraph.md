@@ -18,3 +18,13 @@ category: "essay"
 >
 > 穷人之不可思议处： <mark>上帝让这群人毫无指望却又从不反抗。就像他总是会把解药放在生病的人旁边那样。</mark>
 
+---
+
+<div class="entries">
+  <div id="20X12" class="entry book">
+     <span class="time">20X12</span>
+     <span class="left"><a href="A New Program for Graphic Design, Muriel Cooper" target="_blank">ref</a></span>
+     <span class="middle"><p>Hello world</p></span>
+     <span class="right">just for test</span>
+  </div>
+</div>
