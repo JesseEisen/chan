@@ -90,10 +90,11 @@ body {
 .post>a {
     color: #6f92ba;
     text-decoration: none;
+    transition: color .4s;
 }
 
 .post>a:hover {
-    color: white;
+    text-decoration: underline;
 }
 
 .content {
