@@ -1,6 +1,6 @@
 ---
 gitlayout: post
-title: "Jq 不完全使用指北"
+title: "Jq 使用指北"
 author: "Chan"
 date: "2019-10-21"
 category: "note"

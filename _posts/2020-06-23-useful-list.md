@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Useful Things"
+title: "Personal Awesome List Collect"
 author: "chan"
 date: "2020-06-23"
 category: "note"

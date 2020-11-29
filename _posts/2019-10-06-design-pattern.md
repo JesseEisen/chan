@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "设计模式总结"
+title: "设计模式笔记"
 author: "Chan"
 date: "2019-10-06"
 category: "note"

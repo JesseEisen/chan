@@ -1,6 +1,6 @@
 ---
 gitlayout: post
-title: "奇怪的问题"
+title: "System Strange Issues"
 author: "Chan"
 date: "2019-12-20"
 category: "note"

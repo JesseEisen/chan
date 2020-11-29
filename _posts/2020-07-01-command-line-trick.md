@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "命令行不常用选项记录"
+title: "不常用命令行选项记录"
 author: "chan"
 date: "2020-07-01"
 category: "note"

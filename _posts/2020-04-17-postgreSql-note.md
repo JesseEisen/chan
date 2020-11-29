@@ -1,6 +1,6 @@
 ---
 gitlayout: post
-title: "postgreSQL 入门到……"
+title: "PostgreSQL Use By Hand"
 author: "Chan"
 date: "2020-04-17"
 category: "note"
