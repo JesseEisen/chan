@@ -329,6 +329,9 @@ img {
 .entry.quote .middle p:first-child {
   margin-bottom: 1rem;
 }
+.entry .right {
+    width: 65%;
+}
 .entry .right p:first-child {
   margin-top: 0;
 }
