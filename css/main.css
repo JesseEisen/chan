@@ -270,7 +270,6 @@ img {
 
 
 .entries {
-    flex: 1;
     display: flex;
     flex-flow: column nowrap;
     margin-left: 1rem;
@@ -309,9 +308,7 @@ img {
 }
 .entry .middle {
   width: 20%;
-
   margin-right: 2rem;
-
   overflow: hidden;
   text-overflow: ellipsis;
   flex-shrink: 0;
