@@ -299,6 +299,9 @@ img {
   font-family: 'SFMono-Regular', monospace; 
   font-variant-numeric: tabular-nums;
 }
+.entry .time {
+    width: 10%;
+}
 .entry a {
   color: inherit;
   text-decoration: none;
