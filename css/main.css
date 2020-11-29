@@ -293,6 +293,7 @@ img {
 }
 .entry {
   display: flex;
+  color: #000;
   line-height: 20px;
   font-size: 12px;
   font-family: 'SFMono-Regular', monospace; 
