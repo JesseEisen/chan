@@ -13,9 +13,6 @@ category: "essay"
      <span class="middle"><p><span>周作人</span><br><span><i>喝茶</i></span></p></span>
      <span class="right"><p>喝茶当于瓦屋纸窗之下，清泉绿茶，用素雅的陶瓷茶具，同二三人共饮，得半日之闲，可抵十年尘梦。</p></span>
   </div>
-</div>
-
-<div class="entries">
   <div id="19Q14-1" class="entry book">
      <span class="time">19Q14</span>
      <span class="left"></span>
